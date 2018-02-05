@@ -1,7 +1,7 @@
 #include <iostream>
-#include <stdio.h>
 #include <string.h>
 #include <cstdlib>
+#include <cstdio>
 #include <limits>
 #include <ctime>
 #include <vector>
@@ -17,9 +17,9 @@ int wordSelect(int listLength){
 
 int main()
 {
-    vector<string> wordlist;
-    wordlist = { "practice", "test", "words", "add", "more", "dinosaur" };
+    vector<string> wordlist = { "practice", "test", "words", "add", "more", "dinosaur" };
 
+    char exitCase;
     // random number
     cout << "Press enter to start." << endl;
     cin.ignore(100, '\n');
@@ -79,6 +79,11 @@ int main()
     else {
       cout << "Sorry, you lose! The word was " << currWord << "." << endl;
     }
+
+    cout << "Enter any letter to close." << endl;
+
+    cin >> exitCase;
+
     return 0;
 }
 
