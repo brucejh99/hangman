@@ -17,7 +17,7 @@ int wordSelect(int listLength){
 
 int main()
 {
-    vector<string> wordlist = { "practice", "test", "words", "add", "more", "dinosaur" };
+    vector<string> wordlist = {"practice", "test", "words", "add", "more", "dinosaur", "money", "address"};
 
     char exitCase;
     // random number
